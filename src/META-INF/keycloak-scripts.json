@@ -1,0 +1,20 @@
+{
+    "authenticators": [
+        {
+            "name": "Qlik - Restrict Users by Domain",
+            "fileName": "qlik-keycloak-domain-auth.js",
+            "description": "Custom authenticator made by Qlik for use with Qlik Sense SaaS. When added to an Authentication Flow, it ensures that users' email addresses end in one of the allowed domains for a given Client."
+        }
+    ],
+    "policies": [
+    ],
+    "mappers": [
+        {
+            "name": "Qlik - Append Email Domain to Groups",
+            "fileName": "qlik-keycloak-domain-mapper.js",
+            "description": "Custom groups claims mapper made by Qlik for use with Qlik Sense SaaS. Appends the domain name in a user's email address to the list of groups in the ID token."
+        }
+    ],
+    "saml-mappers": [
+    ]
+}
